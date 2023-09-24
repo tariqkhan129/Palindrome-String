@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+  <h1>Check Whether the Entered String is Palindrome or Not</h1>
+    <script>
+
+//take input
+const string = prompt('Enter a string: ');
+
+function Palindrome() {
+
+// convert string to an array
+const arrayValue = string.split('');
+
+// reverse the array values
+const reverseArrayValue = arrayValue.reverse();
+
+// convert array to string
+const updateString = reverseArrayValue.join('');
+
+if(string == updateString) {
+    alert('It is a palindrome');
+}
+else {
+    alert('It is not a palindrome');
+}
+}
+
+
+Palindrome(string);
+    </script>
+</body>
+</html>
